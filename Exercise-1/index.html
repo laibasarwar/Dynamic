@@ -10,11 +10,11 @@
   <body>
     <header>
       <nav>
-        <a>Box Model</a>
-        <a>Flexbox</a>
-        <a>Positioning Elements</a>
-        <a>Heading Usage</a>
-        <a>Simple JavaScript</a>
+        <a href="#box-model">Box Model</a>
+        <a href="#flex-box">Flexbox</a>
+        <a href="#positioning-section">Positioning Elements</a>
+        <a href="#heading-section">Heading Usage</a>
+        <a href="#simple-javascript">Simple JavaScript</a>
       </nav>
     </header>
     <main>
@@ -33,7 +33,7 @@
         <div class="interior-flex">
           <div class="interior-flex--top">
             <div>
-              <h2>Display: Flex</h2>
+              <h1>Display: Flex</h1>
             </div>
           </div>
           <div class="interior-flex--horizontal">
@@ -82,12 +82,32 @@
         id="simple-javascript"
         class="simple-javascript-section section-element"
       >
-        <div class="interior"></div>
+        <script>
+          let counter = 0;
+
+          function increaseCounterValue() {
+            counter = counter + 1;
+            const counterDiv = document.querySelector("#counter");
+            counterDiv.innerHTML = counter;
+          }
+        </script>
+
+        <div class="interior">
+          <h2>Simple JavaScript</h2>
+          <div class="counter-button-wrapper">
+            <p id="counter">0</p>
+            <div id="button">
+              <button onclick="increaseCounterValue()">
+                Click to Increase
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <section class="footer">
-        <h2>Student Name - Semester, Year</h2>
+        <h2>Laiba Sarwar - Fall, 2022</h2>
       </section>
     </footer>
   </body>

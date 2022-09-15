@@ -6,6 +6,7 @@
   background-color: #9ef490;
   border-color: 10px solid #187908;
   min-height: 600px;
+  margin-bottom: 40px;
 }
 
 body,
@@ -13,6 +14,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -22,9 +24,28 @@ header {
 }
 
 header nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 header nav a {
+  color: black;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+header nav a:last-of-type {
+  margin-right: 0;
+}
+
+header nav a:first-of-type {
+  margin-right: 0;
 }
 
 .interior {
@@ -70,9 +91,10 @@ header nav a {
 }
 .interior-heading {
   background-color: #f1caf0;
-  max-width: 1200px;
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .interior-heading h1 {
@@ -123,18 +145,26 @@ section.box-model-section {
   background-color: #cff1ca;
 }
 
-/* section.section-element div.interior {
-  background-color: #cff1ca;
-} */
-
 .flex-box-section {
   background-color: #f1d3ca;
 }
+
 .interior-flex {
+  margin: 0 auto;
   border: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+}
+
+.interior-flex--top h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 45px;
 }
 
 .interior-flex > div {
@@ -206,6 +236,7 @@ section.box-model-section {
   height: 680px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .positioning-section h1 {
@@ -238,7 +269,7 @@ section.box-model-section {
 }
 
 .simple-javascript-section .interior {
-  border: none;
+  border: 10px solid black;
 }
 
 .interior-flex {
@@ -246,12 +277,47 @@ section.box-model-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+}
+
+.simple-javascript-section {
+  background-color: #faefd3;
+}
+
+.simple-javascript-section .interior {
+  border: none;
+  color: #644904;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.interior-simple-javascript {
+  color: #644904;
+  margin: 0 40px 0 0;
+}
+.counter-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.counter-button-wrapper p {
+  /* font-size: 64px;
+  font-weight: 700; */
+  margin: 0 40px 0 0;
 }
 
 .footer {
   background-color: #ffc3c3;
-  margin: 0;
-  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px;
   width: 100%;
+}
+
+.footer h2 {
+  margin: 0 auto;
+  max-width: 1200px;
 }
